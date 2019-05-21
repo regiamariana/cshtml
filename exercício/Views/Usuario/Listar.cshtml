@@ -1,0 +1,24 @@
+@using exercício.Models;
+<table>
+    <thead>
+        <tr>
+
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Senha</th>
+            <th>Data de Nascimento</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var item in ViewData["usuarios"] as List<UsuarioModel>){
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Nome</td>
+            <td>@item.Email</td>
+            <td>@item.Senha</td>
+            <td>@item.DataNascimento.ToShortDateString()</td>
+        </tr>
+    }
+    </tbody>
+</table>
