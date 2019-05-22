@@ -1,0 +1,33 @@
+@using exercício.Models;
+
+@{
+    Layout = "MasterPage";
+    ViewBag.Title = "Editar Usuário";
+    UsuarioModel usuario = ViewBag.usuario;
+    string dataNascimento= usuario.DataNascimento.ToString("yyyy-MM-dd");
+    
+}
+<div class="container">
+
+    <h1>Bem vindo</h2>
+        <form action="/Usuario/Editar" method="POST">
+            <h2>Edite seus dados</h2>
+            <div class="form-group">
+                
+                <input type="hidden" value="@usuario.Id" name="id">
+
+                <label for="nome">Nome: </label>
+                <input type="text"  value="@usuario.Nome" name="nome" class="form-control"> 
+                <label for="email" >E-mail: </label>
+                <input type="text" value="@usuario.Email" name="email" class="form-control">
+                <label for="senha">Senha</label>
+                <input type="password"  value="@usuario.Senha" name="senha" class="form-control">
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" name="dataNascimento" value="dataNascimento" class="form-control">
+                <br>
+                <input type="submit" value="Editar"class="btn btn-secondary btn-lg btn-block">
+                
+            </div>
+            
+        </form>
+    </div>

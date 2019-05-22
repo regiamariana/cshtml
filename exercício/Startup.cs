@@ -25,6 +25,7 @@ namespace exercício
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseStaticFiles();
 
             app.UseMvc(
                 rota => rota.MapRoute(

@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\47425337800\\Documents\\exercício\\exercício.csproj",
+      "projectUniqueName": "c:\\Users\\47425337800\\Documents\\cshtml\\exercício\\exercício.csproj",
       "projectName": "exercício",
-      "projectPath": "c:\\Users\\47425337800\\Documents\\exercício\\exercício.csproj",
+      "projectPath": "c:\\Users\\47425337800\\Documents\\cshtml\\exercício\\exercício.csproj",
       "packagesPath": "C:\\Users\\47425337800\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\47425337800\\Documents\\exercício\\obj\\",
+      "outputPath": "c:\\Users\\47425337800\\Documents\\cshtml\\exercício\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

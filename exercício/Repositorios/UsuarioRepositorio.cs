@@ -15,10 +15,7 @@ namespace exercício.Repositorios
                usuario.Id = 1;
            }
            
-            
-
-
-            StreamWriter sw = new StreamWriter("usuarios.csv, true");
+            StreamWriter sw = new StreamWriter("usuarios.csv", true);
             sw.WriteLine($"{usuario.Id}; {usuario.Nome}; {usuario.Email};{usuario.Senha};{usuario.DataNascimento}; ");
             sw.Close();
 
@@ -48,6 +45,41 @@ namespace exercício.Repositorios
                 listaDeUsuarios.Add(usuario);
             }
             return listaDeUsuarios;
+        }
+
+        public UsuarioModel BuscarPorId(int id){
+            List<UsuarioModel> listaDeUsuarios = Listar();
+
+            foreach (var item in listaDeUsuarios)
+            {
+                if (id == item.Id)
+                {
+                    return item;//Retorna o usuario
+                }
+            } return null;
+
+        }
+        public UsuarioModel EditarUsuario(UsuarioModel usuario){
+            string[] linhas = File.ReadAllLines("usuarios.csv");
+
+            for (int i = 0; i < linhas.Length; i++)
+            {
+                if (string.IsNullOrEmpty(linhas[i]))
+                {
+                    continue;
+                }
+                string[] dadosDaLinha = linhas[i].Split(";");
+                //vamos verificar de o id do usuario é igual ao da linha;
+                if (usuario.Id.ToString() == dadosDaLinha[0]){
+                    linhas[i] = $"{usuario.Id};{usuario.Nome};{usuario.Email};{usuario.Senha};{usuario.DataNascimento}";
+                    break;
+                }
+ 
+                    
+                
+            }
+            File.WriteAllLines("usuarios.csv", linhas);
+            return usuario;
         }
     }
 }
