@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47425337800\\Documents\\cshtml\\mc Bonalds\\mc Bonalds.csproj",
+      "projectUniqueName": "c:\\Users\\47425337800\\Documents\\cshtml\\mc Bonalds\\mc Bonalds.csproj",
       "projectName": "mc Bonalds",
-      "projectPath": "C:\\Users\\47425337800\\Documents\\cshtml\\mc Bonalds\\mc Bonalds.csproj",
+      "projectPath": "c:\\Users\\47425337800\\Documents\\cshtml\\mc Bonalds\\mc Bonalds.csproj",
       "packagesPath": "C:\\Users\\47425337800\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47425337800\\Documents\\cshtml\\mc Bonalds\\obj\\",
+      "outputPath": "c:\\Users\\47425337800\\Documents\\cshtml\\mc Bonalds\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
