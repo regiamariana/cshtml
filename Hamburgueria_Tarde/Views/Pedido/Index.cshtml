@@ -1,0 +1,60 @@
+@model Hamburgueria_Tarde.ViewModels.PedidoViewModel
+<header>
+    @{
+        Html.RenderPartial("_HeaderNavBar");
+    }
+</header>
+
+<main>
+        <h2>Pede aí, jovem!</h2>
+        <form method="POST" action="Pedido/RegistrarPedido">
+            <div>
+                <label for="nome">Nome Completo</label>
+                <br />
+                <input id="nome" type="text" maxlength="20" minlength="3" name="nome" />
+            </div>
+
+            <div>
+                <label for="endereco">Endereço</label>
+                <br />
+                <input id="endereco" type="text" maxlength="20" minlength="3" name="endereco" />
+            </div>
+
+            <div>
+                <label for="telefone">Telefone para contato</label>
+                <br />
+                <input id="telefone" type="text" name="telefone"/>
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <br />
+                <input id="email" type="email" name="email"/>
+            </div>
+
+            <div class="double-field">
+                <div>
+                    <label for="hamburguer">Hamburguer</label>
+                    <select id="hamburguer" name="hamburguer">
+                        <option value="" disabled selected>Selecione</option>
+                        @foreach (var h in Model.Hamburgueres)
+                        {
+                            <option value="@h.Nome">@h.Nome</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <label for="shake">Shake</label>
+                    <select id="shake" name="shake">
+                        <option value="" disabled selected>Selecione</option>
+                        @foreach (var h in Model.Shakes)
+                        {
+                            <option value="@h.Nome">@h.Nome</option>
+                        }
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Finalizar pedido!" />
+        </form>
+
+    </main>

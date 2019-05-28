@@ -1,0 +1,12 @@
+<nav>
+    <div class="section-container">
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index" class="active">Principal</a></li>
+            <li><a href='@Url.Action("Index", "Home")#hamburgueres'>Hamburgueres</a></li>
+            <li><a href='@Url.Action("Index", "Home")#shakes'>Shakes</a></li>
+            <li><a href='@Url.Action("Index", "Home")#historia'>História</a></li>
+            <li><a href='@Url.Action("Index", "Home")#local'>Local</a></li>
+            <li><a id="bt-peca_ja" asp-controller="Pedido" asp-action="Index">Peça já!</a></li>
+        </ul>
+    </div>
+</nav>
