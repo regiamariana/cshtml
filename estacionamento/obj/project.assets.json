@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47425337800\\Documents\\estacionamento\\estacionamento.csproj",
+      "projectUniqueName": "C:\\Users\\47425337800\\Documents\\cshtml\\estacionamento\\estacionamento.csproj",
       "projectName": "estacionamento",
-      "projectPath": "C:\\Users\\47425337800\\Documents\\estacionamento\\estacionamento.csproj",
+      "projectPath": "C:\\Users\\47425337800\\Documents\\cshtml\\estacionamento\\estacionamento.csproj",
       "packagesPath": "C:\\Users\\47425337800\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47425337800\\Documents\\estacionamento\\obj\\",
+      "outputPath": "C:\\Users\\47425337800\\Documents\\cshtml\\estacionamento\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

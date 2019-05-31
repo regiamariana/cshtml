@@ -40,9 +40,6 @@ namespace estacionamento.Models
             this.marca = marca;
         }
 
-        public CarroModel(string modelo)
-        {
-            this.modelo = modelo;
-        }
+       
     } 
 }

@@ -84,43 +84,7 @@ namespace estacionamento.Repositorio {
 
         //TERMINA MARCA
 
-        //COMEÇA MODELO
-
-        public CarroModel CadastrarModelos (CarroModel usuario) {
-            if (File.Exists ("modelos.csv")) {
-                usuario.Id = File.ReadAllLines ("modelos.csv").Length + 1;
-            } else {
-                usuario.Id = 1;
-            }
-
-            StreamWriter sw = new StreamWriter ("modelos.csv", true);
-            sw.WriteLine ($"{usuario.Id};{usuario.ModeloCarro};");
-            sw.Close ();
-
-            return usuario;
-        }
-
-        public List<CarroModel> Listar3 () {
-            List<CarroModel> listaDeModelos = new List<CarroModel> ();
-            string[] linhas = File.ReadAllLines ("modelos.csv");
-            CarroModel usuario;
-
-            foreach (var item in linhas) {
-                if (string.IsNullOrEmpty (item)) {
-                    //sair do foreach
-                    continue;
-                }
-                string[] linha = item.Split (";");
-
-                    usuario = new CarroModel (
-                    
-                    modelo: linha[1]  
-                    
-                );
-                listaDeModelos.Add (usuario);
-            }
-            return listaDeModelos;
-        }
+        
 
         public CarroModel BuscarPorModelo (string modelo) {
             List<CarroModel> listaDeUsuarios = Listar ();
