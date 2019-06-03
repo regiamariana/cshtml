@@ -1,0 +1,29 @@
+@model ExEstacionamento.ViewModels.HomeViewModel;
+@{
+    Layout = "_Layout";
+}
+<h1>Estacionamento TSUKAR</h1>
+<form action="Home/RegistrarEntrada" method="POST">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome">
+    <label for="marca">Marca</label>
+    <select name="marca">
+        <option value="" disabled selected>Selecione</option>
+        @foreach (var item in Model.Marcas)
+        {
+        <option value="@item.Nome">@item.Nome</option>
+        }
+      
+    </select>
+    <label for="modelo">Modelo</label>
+    <select name="modelo">
+        <option value="" disabled selected>Selecione</option>
+        @foreach(var item in Model.Modelos){
+        <option value="@item.Nome">@item.Nome</option>
+        } 
+    </select>
+    <label for="placa">Placa</label>
+    <input type="text" name="placa">
+
+    <input type="submit" value="Registrar">
+</form>

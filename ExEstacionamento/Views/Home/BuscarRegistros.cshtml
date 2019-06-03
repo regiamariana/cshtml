@@ -1,0 +1,53 @@
+@model ExEstacionamento.ViewModels.HomeViewModel
+@{
+    Layout = "_Layout";
+}
+<p>Pesquisa:</p>
+<form action='@Url.Action("BuscarRegistros", "Home")' method="POST">
+    <label for="data">Data:</label>
+    <input type="date" name="data">
+
+    <label for="modelo">Modelo:</label>
+    <select name="modelo">
+        <option value="" disabled selected>Selecione</option>
+        @foreach (var item in Model.Modelos)
+        {
+            <option value="@item.Nome">@item.Nome</option>
+        }
+    </select>
+    <input type="submit" value="Filtrar">
+</form>
+
+<h2>Resgistros de entrada</h2>
+
+
+<table>
+    <thead>
+        <tr>
+
+            <th>Nome</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Placa</th>
+            <th>Data e Horário</th>
+        </tr>
+
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Registros)
+        {
+            @if (item == null)
+            {
+                continue;
+            }
+        <tr>
+            <td>@item.Nome</td>
+            <td>@item.Marca.Nome</td>
+            <td>@item.Modelo.Nome</td>
+            <td>@item.Placa</td>
+            <td>@item.DataEntrada</td>
+        </tr>
+        }
+    </tbody>
+</table>

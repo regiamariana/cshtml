@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\47425337800\\Documents\\novoo\\novoo.csproj",
+      "projectUniqueName": "C:\\Users\\47425337800\\Documents\\cshtml\\novoo\\novoo.csproj",
       "projectName": "novoo",
-      "projectPath": "c:\\Users\\47425337800\\Documents\\novoo\\novoo.csproj",
+      "projectPath": "C:\\Users\\47425337800\\Documents\\cshtml\\novoo\\novoo.csproj",
       "packagesPath": "C:\\Users\\47425337800\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\47425337800\\Documents\\novoo\\obj\\",
+      "outputPath": "C:\\Users\\47425337800\\Documents\\cshtml\\novoo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
