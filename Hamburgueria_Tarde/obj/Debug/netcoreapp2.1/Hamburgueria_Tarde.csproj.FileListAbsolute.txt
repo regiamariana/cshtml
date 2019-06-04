@@ -28,3 +28,7 @@ C:\Users\47425337800\Documents\cshtml\Hamburgueria_Tarde\obj\Debug\netcoreapp2.1
 C:\Users\47425337800\Documents\cshtml\Hamburgueria_Tarde\obj\Debug\netcoreapp2.1\Hamburgueria_Tarde.pdb
 C:\Users\47425337800\Documents\cshtml\Hamburgueria_Tarde\obj\Debug\netcoreapp2.1\Hamburgueria_Tarde.csproj.CopyComplete
 C:\Users\47425337800\Documents\cshtml\Hamburgueria_Tarde\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Sucesso.g.cshtml.cs
+C:\Users\47425337800\Documents\cshtml\Hamburgueria_Tarde\obj\Debug\netcoreapp2.1\Razor\Views\Cadastro\cadastro1\Index.g.cshtml.cs
+C:\Users\47425337800\Documents\cshtml\Hamburgueria_Tarde\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Historico.g.cshtml.cs
+C:\Users\47425337800\Documents\cshtml\Hamburgueria_Tarde\obj\Debug\netcoreapp2.1\Razor\Views\Cliente\Login.g.cshtml.cs
+C:\Users\47425337800\Documents\cshtml\Hamburgueria_Tarde\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Falha.g.cshtml.cs

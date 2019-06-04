@@ -88,3 +88,38 @@ form input[type="submit"]:hover {
     flex-direction: column;
     align-content: space-between;
 }
+
+#link-cadastro {
+    text-align: center;
+}
+
+#link-cadastro a {
+    text-decoration: none;
+    color: #ff9933;
+    
+}
+
+#link-cadastro:hover {
+    text-align: center;
+
+}
+
+#link-cadastro:hover a {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+table {
+    text-align: center;
+    color: #fff;
+    border: 1px dashed #ff9933;
+    width: 100%;
+    padding: 5px;
+}
+table th {
+    background-color:#a70000;
+}
+
+h3 {
+    color: #ff9933;
+}

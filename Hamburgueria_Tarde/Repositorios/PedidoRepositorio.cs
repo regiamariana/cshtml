@@ -12,7 +12,7 @@ namespace Hamburgueria_Tarde.Repositorios {
                     File.Create (PATH).Close();
                 }
 
-                var registro = $"{pedido.Id};{pedido.Cliente.Nome};{pedido.Cliente.Endereco};{pedido.Cliente.Telefone};{pedido.Cliente.Email};{pedido.Hamburguer.Nome};{pedido.Hamburguer.Preco};{pedido.Shake.Nome};{pedido.Shake.Preco};{pedido.DataPedido};{pedido.PrecoTotal}\n";
+                var registro = $"{pedido.ID};{pedido.Cliente.Nome};{pedido.Cliente.Endereco};{pedido.Cliente.Telefone};{pedido.Cliente.Email};{pedido.Hamburguer.Nome};{pedido.Hamburguer.Preco};{pedido.Shake.Nome};{pedido.Shake.Preco};{pedido.DataDoPedido};{pedido.PrecoTotal}\n";
 
                 File.AppendAllText (PATH, registro);
             } catch (Exception e) {

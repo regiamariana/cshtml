@@ -1,35 +1,35 @@
 @model Hamburgueria_Tarde.ViewModels.PedidoViewModel
 <header>
-    @{
+@{
         Html.RenderPartial("_HeaderNavBar");
-    }
+}
 </header>
 
 <main>
-        <h2>Pede aí, jovem!</h2>
+        <h2>Pede aí, @Model.Cliente.Nome!</h2>
         <form method="POST" action="Pedido/RegistrarPedido">
             <div>
                 <label for="nome">Nome Completo</label>
                 <br />
-                <input id="nome" type="text" maxlength="20" minlength="3" name="nome" />
+                <input id="nome" type="text" maxlength="20" minlength="3" name="nome" value="@Model.Cliente.Nome" />
             </div>
 
             <div>
                 <label for="endereco">Endereço</label>
                 <br />
-                <input id="endereco" type="text" maxlength="20" minlength="3" name="endereco" />
+                <input id="endereco" type="text" maxlength="20" minlength="3" name="endereco" value="@Model.Cliente.Endereco"/>
             </div>
 
             <div>
                 <label for="telefone">Telefone para contato</label>
                 <br />
-                <input id="telefone" type="text" name="telefone"/>
+                <input id="telefone" type="text" name="telefone" value="@Model.Cliente.Telefone"/>
             </div>
 
             <div>
                 <label for="email">E-mail</label>
                 <br />
-                <input id="email" type="email" name="email"/>
+                <input id="email" type="email" name="email" value="@Model.Cliente.Email"/>
             </div>
 
             <div class="double-field">
