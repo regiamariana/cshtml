@@ -22,3 +22,4 @@ C:\Users\47425337800\Documents\cshtml\pontodigital1\obj\Debug\netcoreapp2.1\pont
 C:\Users\47425337800\Documents\cshtml\pontodigital1\obj\Debug\netcoreapp2.1\pontodigital1.dll
 C:\Users\47425337800\Documents\cshtml\pontodigital1\obj\Debug\netcoreapp2.1\pontodigital1.pdb
 C:\Users\47425337800\Documents\cshtml\pontodigital1\obj\Debug\netcoreapp2.1\pontodigital1.csproj.CopyComplete
+C:\Users\47425337800\Documents\cshtml\pontodigital1\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs

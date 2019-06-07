@@ -1,3 +1,4 @@
+@model pontodigital1.ViewModels.HomeViewModel;
 @{
     Layout = "_Layout";
 }
@@ -122,25 +123,62 @@
             </div>
         </div>
         <div id="formulario">
-            <form method="GET" action="index.html">
+            <form method="POST" action="Home/RegistrarEntrada">
                 <fieldset>
-                    <label class="nome" for="nome">Nome Completo</label> <!--NOME-->
-                    <br />
-                    <input name="nome" id="nome" type="text" maxlength="50" minlength="3" required/>
-                    <br />
-                    <label class="telefone" for="telefone">Telefone</label> <!--TELEFONE-->
-                    <br />
-                    <input name="telefone" id="telefone" type="tel" required />
-                    <br />
-                    <label class="email" for="email">E-mail</label><!--EMAIL-->
-                    <br />
-                    <input name="email" id="email" type="email" required />
-                    <br />
-                    <label class="senha" for="senha">Senha</label>
-                    <br />
-                    <input name="senha" id="senha" type="password" />
-                    <br />
-                    <input id="btn_submit" type="submit" value="Cadastrar">
+                    <div>
+                <label for="nome">Nome Completo</label>
+                <br />
+                <input id="nome" type="text" maxlength="20" minlength="3" name="nome" />
+            </div>
+
+            <div>
+                <label for="genero">Gênero</label>
+                <br />
+                <select name="genero">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    
+                </select>
+            </div>
+
+            <div>
+                <label for="endereco">Endereço</label>
+                <br />
+                <input id="endereco" type="text" maxlength="20" minlength="3" name="endereco" />
+            </div>
+
+            <div>
+                <label for="telefone">Telefone para contato</label>
+                <br />
+                <input id="telefone" type="text" name="telefone"/>
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <br />
+                <input id="email" type="email" name="email"/>
+            </div>
+            <div>
+                <label for="data-nascimento">Data de nascimento</label>
+                <br />
+                <input id="data-nascimento" type="date" name="data-nascimento"/>
+            </div>
+            <div>
+                <label for="senha">senha</label>
+                <br />
+                <input id="senha" type="password" name="senha"/>
+            </div>
+            <div>
+                <label for="confirmar-senha">Confirme sua senha</label>
+                <br />
+                <input id="confirmar-senha" type="password" name="confirmar-senha"/>
+            </div>
+
+
+            
+            <input type="submit" value="Cadastrar" />
+        
                 </fieldset>
             </div>
             </form>
