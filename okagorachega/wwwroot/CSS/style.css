@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #002359;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+
+
+ul {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 30px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+li {
+    justify-content: space-between;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 30px;
+    color: white;
+    justify-content: space-between;
+}
+
+.lupa {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.logo {
+    width: 90px;
+    height: 100px;
+    padding-top: 13px;
+    padding-left: 30px;
+}
+
+#banner {
+    background-image: url(apartment-architectural-design-architecture-1878715.jpg);
+    background-color: #cccccc; 
+    height: 500px; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+h1,h2,h3 {
+    padding-top: 30px;
+}
+
+
+.titulo {
+    text-align: center;
+    align-self: center;
+    
+    padding-top: 60px;
+    
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Russo One', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+}
+
+.titulo > h2 {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    padding-bottom: 40px;
+}
+
+
+h3 {
+    font-size: 40px;
+    font-family: 'Russo One', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: #ffffff;
+    height: 70px;
+}
+
+.botao {
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    color: #ffffff;
+}
+
+.botaoo{
+    color: #ffffff;
+}
+
+#funcionalidades {
+    display: flex;
+    height: 550px;
+    justify-content: center;
+}
+
+.div1 {
+    margin-left: 10px;
+    width: 500px;
+}
+
+.div6 {
+    margin-right: 10px;
+}
+
+.div5 {
+    margin-top: 190px;
+}
+
+.div2 {
+    margin-top: 200px;
+}
+
+.div4 {
+    margin-top: 355px;
+}
+
+.div3 {
+    margin-top: 355px;
+}
+
+.image {
+    margin-top: 20px;
+}
+
+div > h2 {
+    font-family: 'Russo One', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    color: #ffce77;
+}
+
+div > p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+
+#quemsomos {
+    display: flex;
+    justify-content: space-around;
+    background-color: #003433;
+    height: 350px;
+}
+
+#quemsomos > img {
+    width: 400px;
+    height: 300px;
+    margin-top: 25px;
+    border-style: solid;
+    border-color: white;
+}
+
+.txt {
+    display: block;
+    margin-left: 10px;
+    width: 500px;
+}
+
+.txt > h2 {
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.txt > p {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#local > iframe {
+    margin-top: 25px;
+}
+
+#planos {
+    display: flex;
+    justify-content: space-around;
+    background-color: #6badb9;
+    height: 330px;
+    flex-wrap: wrap;
+}
+
+.plano > h3 {
+    color: black;
+    font-size: 20px;
+    height: 45px;
+    text-align: center;
+}
+
+.plano {
+    font-family: 'Russo One', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    background-color: white;
+    height: 250px;
+}
+
+.plano > h2 {
+    font-size: 40px;
+    height: 100px;
+}
+
+.plano {
+    align-self: center;
+    width: 350px;
+}
+
+#cadastro {
+    display: flex;
+    justify-content: space-around;
+    height: 650px;
+    background-color: #f0eaea;
+}
+
+.grupo1 {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+.grupo2 {
+    display: block;
+}
+
+.mari {
+    display: block;
+    position: relative;
+    left: 100px;
+}
+
+.img1 {
+    padding-right: 70px;
+}
+
+.img3 {
+    padding-right: 70px;
+}
+
+.mari > h2 {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 
+    -1px -1px 0 #246d7a,
+         1px -1px 0 #246d7a,
+        -1px 1px 0 #246d7a,
+         1px 1px 0 #246d7a;
+}
+
+#cadastro > #formulario {
+    align-self: center;
+    position: relative;
+    right: 130px;
+}
+
+fieldset {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 25px;
+    background-color: #246d7a;
+}
+
+#formulario label.nome
+{
+  position:absolute;
+  left:19px;
+  top: 23px;
+  margin-right:5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffffff;
+}
+
+#formulario input#nome
+{
+  background-color:#ffffff;
+  position:absolute;
+  left:45px;
+  top:63px;
+  width:400px;
+  height: 40px;
+  border: solid #246d7a;
+}
+
+#formulario input#telefone
+{
+  background-color:#ffffff;
+  position:absolute;
+  left:45px;
+  top:163px;
+  width:400px;
+  height: 40px;
+  border: solid #246d7a;
+}
+
+#formulario input#email
+{
+  background-color:#ffffff;
+  position:absolute;
+  left:45px;
+  top:263px;
+  width:400px;
+  height: 40px;
+  border: solid #246d7a;
+}
+
+#formulario input#senha
+{
+  background-color:#ffffff;
+  position:absolute;
+  left:45px;
+  top:363px;
+  width:400px;
+  height: 40px;
+  border: solid #246d7a;
+}
+
+#formulario input#btn_submit
+{
+  border: solid #246d7a;
+  position:absolute;
+  bottom: 0.5em;
+  right:50px;
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+}
+
+#formulario label.telefone
+{
+  position:absolute;
+  left:19px;
+  top: 123px;
+  margin-right:5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffffff;
+}
+
+#formulario label.email
+{
+  position:absolute;
+  left:19px;
+  top: 223px;
+  margin-right:5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffffff;
+}
+
+#formulario label.senha
+{
+  position:absolute;
+  left:19px;
+  top: 323px;
+  margin-right:5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffffff;
+}
+
+#formulario {
+    margin: auto;
+    position: absolute;
+    padding-bottom: 450px;
+}
+
+
+
+#depoimentos {
+    height: 630px;
+    display: flex;
+}
+
+#depoimentos > h2 {
+    font-family: 'Russo One', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+    position: relative;
+    left: 150px;
+    color: #ffce77;
+}
+
+#FAQ {
+    width: 540px;
+    height: 400px;
+    background-color: #ecebeb;
+    position: relative;
+    top: 160px;
+    right: 130px;
+
+}
+
+.cara {
+    background-color: white;
+    position: relative;
+    left: 10px;
+    top: 35px;
+    align-self: center;
+    width: 480px;
+    height: 40px;
+
+}
+
+.cara p {
+    color: #1d58af;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+#comentarios {
+    display: block;
+    align-self: center;
+    padding-left: 70px;
+}
+
+
+.imgg1 {
+    padding-left: 100px;
+}
+
+#comentarios > input {
+    width: 455px;
+    height: 40px;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+#sac {
+    width: 100%;
+    height: 300px;
+    background-color: #ffce77;
+}
+
+fieldset {
+    width: 300px;
+    height: 20px;
+    background-color: #ffce77;
+    border: none;
+}
+
+#orelha input#nome {
+    width:400px;
+  height: 40px;
+  border: solid #246d7a;
+}
+
+#orelha input#email {
+    width:400px;
+  height: 40px;
+  border: solid #246d7a;
+}
+
+#orelha input#telefone {
+    width:400px;
+  height: 40px;
+  border: solid #246d7a;
+}
+
+
+
+.sofrencia {
+    display: flex;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    top: 20px;
+}
+
+.antiaderencia {
+    display: flex;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    bottom: 20px;
+}
+
+.malemolencia {
+    display: flex;
+    position: relative;
+    left: 500px;
+    top: 20px;
+    bottom: 60px;
+    align-items: center;
+    padding-left: 450px;
+
+}
+
+.clase {
+    position: relative;
+    left: 20px;
+}
+
+@media (max-width: 768px){
+    
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+@{
+    var user = (string) ViewData["User"];
+}
+<header>
+
+        <a href='@Url.Action("Index","Home")'></a>
+        <div class="section-container"></div>
+        <img class="logo" src="logo.png" alt="logo da empresa" />
+        
+        <ul>
+            <li><a asp-controller="Home" asp-action="Index" class="active">Principal</a></li>
+            <li class="lista"><a href='@Url.Action("Index", "Home")#funcionalidades'>Funcionalidades</a></li>
+            <li class="lista"><a href='@Url.Action("Index", "Home")#quemsomos'>Quem somos nós</a></li>
+            <li class="lista"><a href='@Url.Action("Index", "Home")#pacotes'>Pacotes</a></li>
+            <li class="lista"><a href='@Url.Action("Index", "Home")#depoimentos'>FAC/SAC</a></li>
+            <li class="lista"><a href='@Url.Action("Index", "Home")#cadastro'>Cadastro/Login</a></li>
+            @if(string.IsNullOrEmpty(user))
+            { 
+            <li><a id="bt_login" asp-controller="Cliente" asp-action="Login">Login/Cadastro</a></li>
+            }
+            else
+            {
+            <li> <a id="bt_logout" asp-controller="Cliente" asp-action="Logout">Logout</a></li>
+            }
+
+        </ul>
+        
+    </nav>
+</header>
