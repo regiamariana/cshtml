@@ -27,9 +27,13 @@ namespace okagorachega.Controllers
             {
                 HttpContext.Session.SetString(SESSION_EMAIL, usuario);
                 HttpContext.Session.SetString(SESSION_CLIENTE, cliente.Nome);
+
+                return RedirectToAction( "Index", "Home");
+
             }
 
-            return RedirectToAction("Comentario", "Index");
+            return RedirectToAction( "Login", "Cliente");
+            //primeiro o metodo depois controller
         }
 
         public IActionResult Logout(){

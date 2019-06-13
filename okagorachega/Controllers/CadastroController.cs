@@ -8,7 +8,7 @@ namespace okagorachega.Controllers
 {
     public class CadastroController : Controller
     {
-        public ClienteRepositorio clienteRepositorio = new ClienteRepositorio();
+        private ClienteRepositorio clienteRepositorio = new ClienteRepositorio();
         public IActionResult Index(){
             
             return View();
@@ -30,7 +30,7 @@ namespace okagorachega.Controllers
 
             ViewData["Action"] = "Cadastro";
 
-            return View(clienteRepositorio);
+            return RedirectToAction("Index", "Home");
         }
 
        

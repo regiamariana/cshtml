@@ -8,16 +8,24 @@ namespace okagorachega.Repositorios
     public class ClienteRepositorio : BaseRepositorio
     {
          public static uint CONT = 0;
-        private const string PATH = "Database/Cliente.csv";
-        private const string PATH_INDEX = "Database/Cliente_Id.csv";
+        private const string PATH = "DataBase/Cliente.csv";
+        private const string PATH_INDEX = "DataBase/Cliente_Id.csv";
         private List<ClienteModel> clientes = new List<ClienteModel> ();
 
         public bool Inserir (ClienteModel cliente) {
-            CONT++;
-            File.WriteAllText (PATH_INDEX, CONT.ToString ());
+            try {
 
-            string linha = PrepararRegistroCSV (cliente);
-            File.AppendAllText (PATH, linha);
+                if (!File.Exists (PATH)) {
+                    File.Create (PATH).Close();
+                }
+
+                var registro = $"id={CONT};nome={cliente.Nome};email={cliente.Email};senha={cliente.Senha};endereco={cliente.Endereco};telefone={cliente.Telefone};data_nascimento={cliente.DataNascimento};\n";
+
+                File.AppendAllText (PATH, registro);
+            } catch (Exception e) {
+                System.Console.WriteLine("Chegou no catch!");
+                System.Console.WriteLine(e.StackTrace);
+            }
 
             return true;
         }

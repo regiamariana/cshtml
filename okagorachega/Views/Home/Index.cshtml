@@ -96,9 +96,9 @@
                 <h2>Tenha o controle do Ponto Digital, cadastre-se</h2>
 
                 <div id="formulario">
-                <form method="POST" action="Home/Index">
+                    <form method="POST" action='@Url.Action("Cadastrar", "Cadastro")' >
+                        <!-- primeiro método, depois controller -->
                     <fieldset>
-                        <label class="nome" for="nome">Nome Completo</label> <!--NOME-->
                         <br />
                         <input name="nome" id="nome" type="text" maxlength="50" minlength="3" required/>
                         <br />
