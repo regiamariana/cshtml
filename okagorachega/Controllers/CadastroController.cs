@@ -30,7 +30,7 @@ namespace okagorachega.Controllers
 
             ViewData["Action"] = "Cadastro";
 
-            return View();
+            return View(clienteRepositorio);
         }
 
        

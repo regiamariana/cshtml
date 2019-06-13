@@ -94,6 +94,34 @@
             <div class="mari">
 
                 <h2>Tenha o controle do Ponto Digital, cadastre-se</h2>
+
+                <div id="formulario">
+                <form method="POST" action="Home/Index">
+                    <fieldset>
+                        <label class="nome" for="nome">Nome Completo</label> <!--NOME-->
+                        <br />
+                        <input name="nome" id="nome" type="text" maxlength="50" minlength="3" required/>
+                        <br />
+                        <label class="telefone" for="telefone">Telefone</label> <!--TELEFONE-->
+                        <br />
+                        <input name="telefone" id="telefone" type="tel" required />
+                        <br />
+                        <label class="email" for="email">E-mail</label><!--EMAIL-->
+                        <br />
+                        <input name="email" id="email" type="email" required />
+                        <br />
+                        <label class="senha" for="senha">Senha</label>
+                        <br />
+                        <input name="senha" id="senha" type="password" />
+                        <br />
+                        <label for="data-nascimento">Data de nascimento</label>
+                        <br />
+                        <input id="data-nascimento" type="date" name="data-nascimento" />
+                        <br />
+                        <input id="btn_submit" type="submit" value="Cadastrar">
+                    </fieldset>
+                </form>
+                </div>
                 
                 
                 <div class="grupo1">
