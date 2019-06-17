@@ -8,6 +8,8 @@ namespace okagorachega.Controllers
 {
     public class CadastroController : Controller
     {
+        public const string SESSION_EMAIL = "_EMAIL";
+        public const string SESSION_SENHA = "_SENHA";
         private ClienteRepositorio clienteRepositorio = new ClienteRepositorio();
         public IActionResult Index(){
             

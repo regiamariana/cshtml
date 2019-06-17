@@ -99,6 +99,7 @@
                     <form method="POST" action='@Url.Action("Cadastrar", "Cadastro")' >
                         <!-- primeiro método, depois controller -->
                     <fieldset>
+                        <label class="nome" for="nome" >Nome</label>
                         <br />
                         <input name="nome" id="nome" type="text" maxlength="50" minlength="3" required/>
                         <br />
@@ -166,11 +167,12 @@
                                 </div>
             </section>
             <section id="comentarios">
-                <img class="imgg1" src="balaoo.png" alt="balão" />
-                <img class="imgg2" src="balaolao.png" alt="balão" />
-                <img class="imgg1" src="balaoo.png" alt="balão" />
-                <img class="imgg2" src="balaolao.png" alt="balão" />
-                <input id="nome" type="text" maxlength="250" minlength="3" required/>
+                <form method="POST" action='@Url.Action("RegistrarComentario", "Comentario")'>
+                    <label for="nome">Digite seu nome</label>
+                    <input name="nome" id="nome" type="text"maxlength="250" minlength="3" required>
+                    <input name="mensagem" id="mensagem" type="text" maxlength="250" minlength="3" required/>
+                    <input id="btn_submit" type="submit" value="RegistrarComentario">
+                </form> 
             </section>
             </section>
             <section id="sac">
