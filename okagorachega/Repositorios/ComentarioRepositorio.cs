@@ -60,6 +60,29 @@ namespace okagorachega.Repositorios
             return null;
         }
 
+        public List<ComentarioModel> ListarComentarios(){
+            List<ComentarioModel> ListaDeComentarios = new List<ComentarioModel>();
+           string[] List =  File.ReadAllLines(PATH);
+
+           foreach (var item in List)
+           {
+               if (string.IsNullOrEmpty(item))
+               {
+                   
+               continue;
+               }
+               
+           string[] dado = item.Split(";");
+           ComentarioModel comentario = new ComentarioModel();
+           //comentario.Id = ulong.Parse(dado[0]);
+           comentario.NomeUsuario = dado[1];
+           comentario.Mensagem = dado[2];
+           comentario.DataEnvio = DateTime.Parse(dado[3]);
+           ListaDeComentarios.Add(comentario);
+           }
+            return ListaDeComentarios;
+        }
+
     }
 
 }

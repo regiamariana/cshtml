@@ -1,6 +1,9 @@
+@using okagorachega.Models;
+@using System.IO;
 @{
     Layout = "_Layout";
     Html.RenderPartial("_HeaderNavBar");
+    var listaAprovada = (List<ComentarioModel>) ViewData["Comentarios"];
 }
 <body>
     <main>
@@ -162,10 +165,25 @@
                 <form method="POST" action='@Url.Action("RegistrarComentario", "Comentario")'>
                     <label for="nome">Digite seu nome</label>
                     <input name="nome" id="nome" type="text"maxlength="250" minlength="3" required>
+                    <label for="mensagem" >Digite a mensagem!</label>
                     <input name="mensagem" id="mensagem" type="text" maxlength="250" minlength="3" required/>
+                    <label for="dataEnvio">Coloque a data de hoje</label>
+                    <input type="date" name="dataEnvio" maxlength="250" minlength="3" required>
                     <input id="btn_submit" type="submit" value="RegistrarComentario">
                 </form> 
             </section>
+            <article id="comentarios">
+                <h2>Comentários dos usuários</h2>
+
+                <div>
+                    @foreach(var item in listaAprovada){
+
+                    <div class="div">
+                        <p class="msn">"@item.Mensagem"</p>
+                    </div>
+                    }
+                </div>
+            </article>
             </section>
             <section id="sac">
                 <h2>SAC</h2>
