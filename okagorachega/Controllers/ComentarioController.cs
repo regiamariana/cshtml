@@ -20,7 +20,6 @@ namespace okagorachega.Controllers
         public IActionResult RegistrarComentario(IFormCollection form){
 
             ComentarioModel cliente = new ComentarioModel();
-            cliente.Id = ulong.Parse(form["id"]);
             cliente.NomeUsuario = form["nome"];
             cliente.Mensagem = form["mensagem"];
             cliente.DataEnvio = DateTime.Parse(form["dataEnvio"]);

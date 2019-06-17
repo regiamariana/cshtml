@@ -29,7 +29,7 @@
                 <p>Controle quem tem acesso aos relatórios, lista de funcionários e quem somente marca o ponto.</p>
             </div>
 
-            <div class="image"><img src="celefone.png" alt="Telefone" /></div>
+            <div class="image"><img src="~/Imagens/celefone.png" alt="Telefone" /></div>
 
             <div class="div4">
                     <h2>Relatórios automatizados</h2>
@@ -58,7 +58,7 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.885109341232!2d-46.64685812086662!3d-23.536634336337777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deb99025%3A0xb23619858bc7e63e!2sEscola+SENAI+de+Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1552503758678"
                          width="400" height="297" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
-                <img src="imagefb.jpg" alt="Equipe" />
+                <img src="~/Imagens/imagefb.jpg" alt="Equipe" />
         </section>
         <section id="planos">
             <section class="plano">
@@ -95,47 +95,39 @@
 
                 <h2>Tenha o controle do Ponto Digital, cadastre-se</h2>
 
-                <div id="formulario">
-                    <form method="POST" action='@Url.Action("Cadastrar", "Cadastro")' >
+    <section id="formulario">
+    <form method="POST" action='@Url.Action("Cadastrar", "Cadastro")' >
                         <!-- primeiro método, depois controller -->
-                    <fieldset>
-                        <label class="nome" for="nome" >Nome</label>
-                        <br />
-                        <input name="nome" id="nome" type="text" maxlength="50" minlength="3" required/>
-                        <br />
-                        <label class="telefone" for="telefone">Telefone</label> <!--TELEFONE-->
-                        <br />
-                        <input name="telefone" id="telefone" type="tel" required />
-                        <br />
-                        <label class="email" for="email">E-mail</label><!--EMAIL-->
-                        <br />
-                        <input name="email" id="email" type="email" required />
-                        <br />
-                        <label class="senha" for="senha">Senha</label>
-                        <br />
-                        <input name="senha" id="senha" type="password" />
-                        <br />
-                        <label for="data-nascimento">Data de nascimento</label>
-                        <br />
-                        <input id="data-nascimento" type="date" name="data-nascimento" />
-                        <br />
-                        <input id="btn_submit" type="submit" value="Cadastrar">
-                    </fieldset>
+                   
+    <div class="form-group">
+    <label for="nomee">Nome</label>
+    <input type="text" class="form-control" id="nomee" aria-describedby="emailHelp" placeholder="Enter email">
+
+  </div>
+  <div class="form-group">
+    <label for="emaill">email</label>
+    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="senha">Senha</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="telefone">Telefone</label>
+    <input type="tel" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="data-nascimento">Data de nascimento</label>
+    <input type="date" class="form-control" id="exampleInputPassword1" name="data-nascimento" placeholder="Password">
+  </div>
+  
+  </div>
+  <button type="submit" class="btn btn-primary">Cadastrar</button>
                 </form>
-                </div>
+        </section>
                 
                 
-                <div class="grupo1">
-                    
-                    <img class="img1" src="Sem Título-1.jpg" alt="play">
-                    <img class="img2" src="Sem Título-1.jpg" alt="play">
-                </div>
-                <div class="grupo2">
-                    
-                    <img class="img3" src="Sem Título-1.jpg" alt="play">
-                    <img class="img4" src="Sem Título-1.jpg" alt="play">
-                </div>
-            </div>
+                
             
                 
         </section>
